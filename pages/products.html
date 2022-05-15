@@ -6,26 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Style.css -->
     <link rel="stylesheet" href="../style.css">
     <title>Guitar Shop - Products</title>
 </head>
 
 <body>
-    <!-- Header Section & Nav Bar -->
-    <header>
-        <a href="../index.html"><img src="../img/logo.png" alt="Guitar Shop Logo"></a>
+    <!-- Bootstrap Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+            <a href="../index.html" class="logoHeader"><img src="../img/logo.png" alt="Guitar Shop Logo"></a>
+            <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                <span class="navbar-toggler-icon" id="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-white bg-dark" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Guitar Shop</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close" id="btnClose"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="navbarLinks">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item active" aria-current="page">
+                            <a class="nav-link" href="products.html" id="active-link">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="media.html">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutUs.html">About Us</a>
+                        </li>
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="media.html">Media</a></li>
-                <li><a href="aboutUs.html">About Us</a></li>
-            </ul>
-
-            <button><a href="contact.html">Contact</a></button>
-        </nav>
-    </header>
+                        <button><a href="contact.html">Contact</a></button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <!-- Main Section -->
     <main class="indexProducts">
@@ -84,6 +109,11 @@
 
         <h6>Copyright ©2022. Guitar Shop Instruments Corporation. All Rights Reserved.</h6>
     </footer>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

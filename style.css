@@ -26,7 +26,7 @@ nav {
 }
 
 nav button {
-    background-color: orange;
+    background-color: #FF9E08;
     border-style: none;
     border-radius: 4px;
     height: 2.3rem;
@@ -35,6 +35,10 @@ nav button {
 
 nav button a {
     color: whitesmoke;
+}
+
+nav button a:hover {
+    color: rgb(37, 37, 37);
 }
 
 /* Bootstrap overwrites */
@@ -48,7 +52,7 @@ nav button a {
 }
 
 #btnClose {
-    background-color: orange !important;
+    background-color: #FF9E08 !important;
 }
 
 .bg-dark {
@@ -57,11 +61,14 @@ nav button a {
 
 .nav-link {
     color: rgb(37, 37, 37) !important;
+}
 
+.nav-link:hover {
+    color: #FF9E08 !important;
 }
 
 #active-link {
-    color: orange !important;
+    color: #FF9E08 !important;
     font-weight: bolder;
 }
 
@@ -72,6 +79,10 @@ nav button a {
     align-items: center;
     height: 2.5rem;
     width: 3.8rem;
+}
+
+#contact-active {
+    text-decoration: underline 1.5px solid;
 }
 
 /* Main Section */
@@ -97,7 +108,7 @@ nav button a {
 }
 
 .btnMainPrimary {
-    background-color: orange;
+    background-color: #FF9E08;
     border-style: none;
     border-radius: 4px;
     height: 2rem;
@@ -115,7 +126,7 @@ nav button a {
     border-radius: 4px;
     height: 2rem;
     width: 8rem;
-    border: 1px solid orange;
+    border: 1px solid #FF9E08;
     margin-left: 1rem;
 }
 
@@ -164,7 +175,7 @@ nav button a {
 }
 
 .sectionCard button {
-    background-color: orange;
+    background-color: #FF9E08;
     border-style: none;
     border-radius: 4px;
     height: 2rem;
@@ -227,6 +238,10 @@ footer h2 {
     margin-left: 1rem;
 }
 
+.siteMapSection a:hover {
+    color: rgb(37, 37, 37) !important;
+}
+
 .siteMapSection h4 {
     padding-top: 0.2rem;
     margin-bottom: 1.7rem;
@@ -239,6 +254,7 @@ footer h6 {
     text-align: center;
     font-weight: lighter;
     padding: 1.5rem 0;
+    margin-bottom: 0 !important;
 }
 
 /* PRODUCT PAGE */
