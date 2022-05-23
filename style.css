@@ -22,7 +22,6 @@ a {
 nav {
     display: flex;
     border-bottom: 2px solid #FF9E08;
-    padding: 0 2rem !important;
 }
 
 nav button {
@@ -43,7 +42,6 @@ nav button a:hover {
 
 /* Bootstrap overwrites */
 #navbarLinks {
-    display: flex !important;
     align-items: center;
 }
 
@@ -52,15 +50,7 @@ nav button a:hover {
 }
 
 #btnClose {
-    background-color: #FF9E08 !important;
-}
-
-.bg-dark {
-    background-color: white !important;
-}
-
-.nav-link {
-    color: rgb(37, 37, 37) !important;
+    background-color: #FF9E08;
 }
 
 .nav-link:hover {
@@ -537,7 +527,7 @@ footer h6 {
 
 @media screen and (max-width: 380px) {
     nav {
-        padding: 0 !important;
+        padding: 0;
     }
 }
 
@@ -551,9 +541,8 @@ footer h6 {
 
 @media screen and (max-width: 314px) {
     .container-fluid {
-        display: flex !important;
         align-items: center;
-        flex-direction: column !important;
+        flex-direction: column;
         padding-bottom: 1rem;
     }
 }
